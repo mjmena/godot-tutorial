@@ -25,7 +25,9 @@ func _physics_process(delta):
 	#flip the sprite
 	if direction > 0 :
 		animated_sprite_2d.flip_h = false;
-	if direction < 0: 
+		#scale.x = -1
+	if direction < 0:
+		#scale.x = 1 
 		animated_sprite_2d.flip_h = true; 
 	
 	if is_on_floor():
